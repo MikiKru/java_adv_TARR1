@@ -75,6 +75,22 @@ public class Repetition {
         Collections.reverse(reversList);
         return reversList;
     }
+    // Utwórz mapę w której kluczami będą elementy a wartościami ich liczebność w liście elements
+    public Map<String ,Integer> getElementsQuantityInMap() {
+        Map<String,Integer> elementsQuantity = new HashMap<>();
 
+        Set<String> uniqElements = new HashSet<>(elements);
+        for (String elementUniq : uniqElements) {
+            int counter = 0;
+            for (String element : elements) {
+                if (elementUniq.equals(element)) {
+                    counter++;
+                }
+            }
+            elementsQuantity.put(elementUniq,counter);
+
+        }
+        return elementsQuantity;
+    }
 
 }

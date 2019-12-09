@@ -14,6 +14,6 @@ public class Main {
         repetition.getElementsQuantity();
         System.out.println(repetition.getElementsRevers());
         repetition.getElements();
-
+        System.out.println(repetition.getElementsQuantityInMap());
     }
 }
