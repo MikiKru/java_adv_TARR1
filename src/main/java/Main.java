@@ -9,10 +9,9 @@ public class Main {
 //        System.out.println(repetition.deleteOneElement("a"));
 //        System.out.println(repetition.deleteOneElement("abba"));
         repetition.swapEllementsByIndex(1,3);
-
-
 //        repetition.deleteSameElement("b");
         repetition.getElements();
+        repetition.getElementsQuantity();
 
     }
 }

@@ -15,6 +15,7 @@ public class Repetition {
             System.out.println(s);
         }
     }
+
     // 3. Wypisz unikatowe elementy z listy
     public void getUniqElements() {
         Set<String> uniqElements = new HashSet<>(elements);
@@ -22,41 +23,53 @@ public class Repetition {
             System.out.print(uniqElement + " ");
         }
     }
+
     // 4. Dodawanie elemntu do listy podanego w argumencie metody
-    public String addElement( String element){
+    public String addElement(String element) {
         elements.add(element);
         return element;
     }
-    public String deleteOneElement (String deleteElement){
-        if (elements.remove(deleteElement)){
-            return "usunieto element "+ deleteElement;
 
-        }else{
-            return "w liscie nie ma takiego elementu "+ deleteElement;
+    public String deleteOneElement(String deleteElement) {
+        if (elements.remove(deleteElement)) {
+            return "usunieto element " + deleteElement;
+
+        } else {
+            return "w liscie nie ma takiego elementu " + deleteElement;
         }
     }
-    public void  deleteSameElement (String deleteElement) {
+
+    public void deleteSameElement(String deleteElement) {
         int index = 0;
-        while(index < elements.size()){      // zwraca true dopóki jest jakiś elelement do usunięcia
-            if(elements.get(index).equals(deleteElement)){
+        while (index < elements.size()) {      // zwraca true dopóki jest jakiś elelement do usunięcia
+            if (elements.get(index).equals(deleteElement)) {
                 elements.remove(deleteElement);
-                index --;
+                index--;
             }
-            index ++;
+            index++;
         }
     }
+
     // swap -> zamiana elementów miejscami
-    public void swapEllementsByIndex ( int index1, int index2){
+    public void swapEllementsByIndex(int index1, int index2) {
         String temp = elements.get(index1);
-        elements.set(index1,elements.get(index2));
+        elements.set(index1, elements.get(index2));
         elements.set(index2, temp);
     }
+
     // metoda zwracająca liczebność poszczególnych elementów
-    public void getElementsQuantity(){
-        
+    public void getElementsQuantity() {
+        Set<String> uniqElements = new HashSet<>(elements);
+        for (String elementUniq : uniqElements) {
+            int counter = 0;
+            for (String element : elements) {
+                if (elementUniq.equals(element)) {
+                    counter++;
+                }
+            }
+            System.out.println(elementUniq + " Występuje: " + counter);
+        }
     }
-
-
 
 
 }
