@@ -12,6 +12,8 @@ public class Main {
 //        repetition.deleteSameElement("b");
         repetition.getElements();
         repetition.getElementsQuantity();
+        System.out.println(repetition.getElementsRevers());
+        repetition.getElements();
 
     }
 }

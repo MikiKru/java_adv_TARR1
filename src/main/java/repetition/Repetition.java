@@ -70,6 +70,11 @@ public class Repetition {
             System.out.println(elementUniq + " Występuje: " + counter);
         }
     }
+    public List<String> getElementsRevers() {
+        List<String> reversList = new LinkedList<>(elements);
+        Collections.reverse(reversList);
+        return reversList;
+    }
 
 
 }
