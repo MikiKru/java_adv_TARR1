@@ -6,7 +6,10 @@ public class Main {
 //        repetition.getElements();
 //        repetition.getUniqElements();
         System.out.println("Daodano element: " + repetition.addElement("Paulina"));
-        System.out.println(repetition.deleteElement("a"));
+//        System.out.println(repetition.deleteOneElement("a"));
+//        System.out.println(repetition.deleteOneElement("abba"));
+        repetition.deleteSameElement("b");
         repetition.getElements();
+
     }
 }

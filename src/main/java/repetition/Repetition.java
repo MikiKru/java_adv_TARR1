@@ -27,15 +27,32 @@ public class Repetition {
         elements.add(element);
         return element;
     }
-    public String deleteElement (String deleteElement){
+    public String deleteOneElement (String deleteElement){
         if (elements.remove(deleteElement)){
             return "usunieto element "+ deleteElement;
 
         }else{
             return "w liscie nie ma takiego elementu "+ deleteElement;
         }
-
     }
+    public void  deleteSameElement (String deleteElement) {
+        int index = 0;
+        while(index < elements.size()){      // zwraca true dopóki jest jakiś elelement do usunięcia
+            if(elements.get(index).equals(deleteElement)){
+                elements.remove(deleteElement);
+                index --;
+            }
+            index ++;
+        }
+        //        for (String s : elements) {
+//            if (s.equals(deleteElement)) {
+//                elements.remove(deleteElement);
+//            }
+//        }
+    }
+
+
+
 
 
 }
