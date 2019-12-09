@@ -78,7 +78,6 @@ public class Repetition {
     // Utwórz mapę w której kluczami będą elementy a wartościami ich liczebność w liście elements
     public Map<String ,Integer> getElementsQuantityInMap() {
         Map<String,Integer> elementsQuantity = new HashMap<>();
-
         Set<String> uniqElements = new HashSet<>(elements);
         for (String elementUniq : uniqElements) {
             int counter = 0;
@@ -88,9 +87,45 @@ public class Repetition {
                 }
             }
             elementsQuantity.put(elementUniq,counter);
-
         }
         return elementsQuantity;
     }
+    // Metoda do sortowania elementów z argumentem asc decydującym o typie sortowania
+    public List<String> getSortedElements(boolean asc){     // ASCending - rosnąco A-Z  DESCending - malejąco Z-A
+        List<String> sortedList = new LinkedList<>(elements);
+        for (int i = 0; i < sortedList.size() - 1; i++ ){
+            for (int j = 0; j < sortedList.size() - 1; j++ ){
+                if ((asc == true) && ( sortedList.indexOf(j) > sortedList.indexOf(j+1) )){
+                    System.out.println("swap");
+                    String temp = sortedList.get(j);
+                    sortedList.set(j, sortedList.get(j+1));
+                    sortedList.set(j+1, temp);
+                }
+                if ((asc == false) && (sortedList.indexOf(j) < sortedList.indexOf(j+1))){
+                    System.out.println("swap");
+                    String temp = sortedList.get(j);
+                    sortedList.set(j, sortedList.get(j+1));
+                    sortedList.set(j+1, temp);
+                }
+            }
+        }
+        return sortedList;
 
+    }
+    public List<String> getSortedElementsByCollections(boolean asc) {
+        List<String> sortedList = new LinkedList<>(elements);
+        if (asc) {
+            Collections.sort(sortedList); // rosnąco
+        } else {
+            Collections.sort(sortedList, Collections.reverseOrder());
+        }
+        return sortedList;
+    }
 }
+
+
+
+
+
+
+
