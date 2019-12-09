@@ -44,13 +44,17 @@ public class Repetition {
             }
             index ++;
         }
-        //        for (String s : elements) {
-//            if (s.equals(deleteElement)) {
-//                elements.remove(deleteElement);
-//            }
-//        }
     }
-
+    // swap -> zamiana elementów miejscami
+    public void swapEllementsByIndex ( int index1, int index2){
+        String temp = elements.get(index1);
+        elements.set(index1,elements.get(index2));
+        elements.set(index2, temp);
+    }
+    // metoda zwracająca liczebność poszczególnych elementów
+    public void getElementsQuantity(){
+        
+    }
 
 
 

@@ -8,7 +8,10 @@ public class Main {
         System.out.println("Daodano element: " + repetition.addElement("Paulina"));
 //        System.out.println(repetition.deleteOneElement("a"));
 //        System.out.println(repetition.deleteOneElement("abba"));
-        repetition.deleteSameElement("b");
+        repetition.swapEllementsByIndex(1,3);
+
+
+//        repetition.deleteSameElement("b");
         repetition.getElements();
 
     }
