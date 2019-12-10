@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71debeb0-76f8-4b57-9949-830e4ade49da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/classExtends/AdditionSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classExtends/AdditionSets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/classExtends/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classExtends/Auto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/classExtends/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classExtends/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classExtends/AdditionSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/classExtends/AdditionSets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classExtends/Auto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/classExtends/Auto.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/classExtends/Auto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="21" column="125" selection-start-line="21" selection-start-column="106" selection-end-line="21" selection-end-column="125" />
+            <state relative-caret-position="268">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="37" />
               <folding>
                 <element signature="e#592#593#0" expanded="true" />
                 <element signature="e#627#628#0" expanded="true" />
@@ -35,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/classExtends/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="497">
+              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -44,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/classExtends/AdditionSets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            <state relative-caret-position="293">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#629#630#0" expanded="true" />
@@ -78,8 +75,8 @@
         <option value="$PROJECT_DIR$/src/main/java/moto/Moto.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/repetition/Repetition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/classExtends/Auto.java" />
         <option value="$PROJECT_DIR$/src/main/java/classExtends/AdditionSets.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classExtends/Auto.java" />
         <option value="$PROJECT_DIR$/src/main/java/classExtends/Main.java" />
       </list>
     </option>
@@ -151,13 +148,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576001616416" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576003823305" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -217,12 +214,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575909642238</updated>
-      <workItem from="1575909646582" duration="19863000" />
+      <workItem from="1575909646582" duration="21795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19863000" />
+    <option name="totallyTimeSpent" value="21795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -243,7 +240,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49716714" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1529745" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -311,8 +308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/classExtends/AdditionSets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        <state relative-caret-position="293">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#629#630#0" expanded="true" />
@@ -325,8 +322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/classExtends/Auto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="21" column="125" selection-start-line="21" selection-start-column="106" selection-end-line="21" selection-end-column="125" />
+        <state relative-caret-position="268">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="37" />
           <folding>
             <element signature="e#592#593#0" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -336,8 +333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/classExtends/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="497">
+          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
         </state>
       </provider>
     </entry>

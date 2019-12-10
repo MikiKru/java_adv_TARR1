@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 public class AdditionSets extends Auto {
-    public Map<String, Double> autoEqipment;
+    private Map<String, Double> autoEqipment;
 
     public AdditionSets(String brand, String model,
             String engineType, String fuelType, double price_net) {
@@ -31,4 +31,5 @@ public class AdditionSets extends Auto {
     public String toString() {
         return super.toString() + " " + autoEqipment + " |";
     }
+
 }

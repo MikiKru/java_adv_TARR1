@@ -1,8 +1,8 @@
 package classExtends;
 
 public class Auto extends Object {     // każda klasa dziedziczy metody stn z nadklasy Object
-    public String brand, model, engineType, fuelType;
-    public double price_net;
+    private String brand, model, engineType, fuelType;
+    private double price_net;
 
     // konstruktor
     public Auto(String brand, String model, String engineType, String fuelType, double price_net) {
@@ -21,4 +21,5 @@ public class Auto extends Object {     // każda klasa dziedziczy metody stn z n
     public String toString() {
         return String.format("| %10s | %10s | %10s | %10s | %10.2fPLN |", brand,model,engineType,fuelType,calculatePriceGross());
     }
+
 }
