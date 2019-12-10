@@ -15,12 +15,6 @@ public class Auto extends Object {     // każda klasa dziedziczy metody stn z n
     // toString
     @Override
     public String toString() {
-        return "Auto{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", engineType='" + engineType + '\'' +
-                ", fuelType='" + fuelType + '\'' +
-                ", price_net=" + price_net +
-                '}';
+        return String.format("| %10s | %10s | %10s | %10s | %10.2fPLN |", brand,model,engineType,fuelType,price_net);
     }
 }
