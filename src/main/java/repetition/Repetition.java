@@ -108,7 +108,6 @@ public class Repetition {
             }
         }
         return sortedList;
-
     }
     public List<String> getSortedElementsByCollections(boolean asc) {
         List<String> sortedList = new LinkedList<>(elements);
