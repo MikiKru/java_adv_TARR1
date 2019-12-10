@@ -27,11 +27,26 @@ public class AutoController {
     }
     // dodaj wyposażenie do wybranego auta po indeksie listy
 
-    // daj raba na wszystkie auta
+    /**
+     * Ta metoda coś robi!!!
+     * @param index
+     * @param eqName
+     * @param eqPrice
+     * @author "MK"
+     */
+    public void addEquipment(int index, String eqName, double eqPrice) {
+        Auto auto = autos.get(index);
+        AdditionSets as = (AdditionSets) auto;
+        as.assignEquipmentToAuto(eqName, eqPrice);
+    }
+    // daj rabat na wszystkie auta
 
     public static void main(String[] args) {
         AutoController ac = new AutoController();
         ac.addAuto("VW", "Passat", "1.9TDU", "DIESEL", 100_000);
+        ac.addEquipment(1, "X", 1000);
+//        ac.addEquipment(0, "Y", 2000); -> trzeba castować
         ac.getAutos();
+
     }
 }
