@@ -95,14 +95,12 @@ public class Repetition {
         List<String> sortedList = new LinkedList<>(elements);
         for (int i = 0; i < sortedList.size() - 1; i++ ){
             for (int j = 0; j < sortedList.size() - 1; j++ ){
-                if ((asc == true) && ( sortedList.indexOf(j) > sortedList.indexOf(j+1) )){
-                    System.out.println("swap");
+                if ( asc && ( sortedList.get(j).compareTo(sortedList.get(j+1)) > 0 ) ){ // rosnąco
                     String temp = sortedList.get(j);
                     sortedList.set(j, sortedList.get(j+1));
                     sortedList.set(j+1, temp);
                 }
-                if ((asc == false) && (sortedList.indexOf(j) < sortedList.indexOf(j+1))){
-                    System.out.println("swap");
+                if (!asc && ( sortedList.get(j).compareTo(sortedList.get(j+1)) < 0) ){  // malejąco
                     String temp = sortedList.get(j);
                     sortedList.set(j, sortedList.get(j+1));
                     sortedList.set(j+1, temp);

@@ -15,9 +15,9 @@ public class Main {
 //        System.out.println(repetition.getElementsRevers());
 //        repetition.getElements();
 //        System.out.println(repetition.getElementsQuantityInMap());
-//        System.out.println(repetition.getSortedElements(true));
-//        System.out.println(repetition.getSortedElements(false));
-        System.out.println(repetition.getSortedElementsByCollections(true));
-        System.out.println(repetition.getSortedElementsByCollections(false));
+        System.out.println(repetition.getSortedElements(true));
+        System.out.println(repetition.getSortedElements(false));
+//        System.out.println(repetition.getSortedElementsByCollections(true));
+//        System.out.println(repetition.getSortedElementsByCollections(false));
     }
 }
