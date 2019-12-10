@@ -14,4 +14,9 @@ public class AdditionSets extends Auto {
         autoEqipment = new HashMap<>();
         System.out.println("jestem w kontruktorze AdditionSets");
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " " + autoEqipment + " |";
+    }
 }
