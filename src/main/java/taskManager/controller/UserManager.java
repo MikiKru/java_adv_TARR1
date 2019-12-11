@@ -17,4 +17,6 @@ public interface UserManager {
     void addUser(String name, String lastName);
     // metoda do pobierania aktualnej listy użytkowników
     List<User> getAllUsers();
+    // metoda wyszukująca użytkownika po indeksie
+    User getUserByIndex(int index);
 }

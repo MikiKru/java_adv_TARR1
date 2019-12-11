@@ -7,5 +7,6 @@ public class Main {
         ApplicationController ac = new ApplicationController();
         ac.addUser("Michał", "Kruczkowski");
         ac.printAllUsers();
+
     }
 }
