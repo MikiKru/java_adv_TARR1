@@ -10,6 +10,7 @@ import java.util.List;
 public class User {
     private String name;
     private String lastName;
+    // każdy użytkownik ma swoją listę zadań
     private List<Task> tasks = new LinkedList<>();
 
     public User(String name, String lastName) {
