@@ -1,6 +1,7 @@
 package interfaces;
 
 public abstract class FilesReader {
+    String fileName;
     // metody abstrakcyjne
     public abstract void readFile();
 
@@ -8,7 +9,8 @@ public abstract class FilesReader {
         System.out.println("FILE IS CLOSED");
     }
 
-    public FilesReader() {
+    public FilesReader(String fileName) {
         System.out.println("Jestem w konstruktorze");
+        this.fileName = fileName;
     }
 }

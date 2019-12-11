@@ -22,8 +22,8 @@ public class Main {
 //        } else {
 //            System.out.println("NOT CONNECTED: BAD CREDENTIALS");
 //        }
-        DatabaseConnectorImpl test = new Test();
-        System.out.println("Sterownik: " + test.databaseDriverCheck());
-        System.out.println("Czym jest nasz obiekt: " + test.getClass().getName());
+//        DatabaseConnectorImpl test = new Test();
+//        System.out.println("Sterownik: " + test.databaseDriverCheck());
+//        System.out.println("Czym jest nasz obiekt: " + test.getClass().getName());
     }
 }
