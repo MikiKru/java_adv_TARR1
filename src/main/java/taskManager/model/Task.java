@@ -13,4 +13,13 @@ public class Task {
     private boolean status;
     // do każdego zadania przypisany jest konkretny obiekt użytkownika
     private User user;
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "taskName='" + taskName + '\'' +
+                ", deadline=" + deadline +
+                ", status=" + status +
+                '}';
+    }
 }
