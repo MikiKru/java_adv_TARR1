@@ -1,6 +1,6 @@
 package interfaces;
 // definicja interfajsu
-public interface DatabaseConnector {
+public interface DatabaseConnector extends TransactionManager{
     // pole finalne -> stała
     public final String PORT = "3306";
     // pole statyczne -> zmienna statyczna

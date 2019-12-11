@@ -1,6 +1,6 @@
 package interfaces;
 // klasa implementująca interfejs
-public class DatabaseConnectorImpl implements DatabaseConnector {
+public class DatabaseConnectorImpl implements DatabaseConnector{
     private boolean isDriverInstalled = true;
     @Override
     public boolean databaseDriverCheck() {
@@ -16,11 +16,20 @@ public class DatabaseConnectorImpl implements DatabaseConnector {
         System.out.println("Password: " + password);
     }
     @Override
+    public void setAutoCommit(boolean autoCommit) {
+        if(autoCommit){
+            System.out.println("TRANSAKCJE");
+        } else {
+            System.out.println("BRAK TRANSAKCJI");
+        }
+    }
+    @Override
     public void closeConnecion() {
         System.out.println("CONNECION IS CLOSED");
     }
     public void executeQuerry(String SQL){
         System.out.println("Query: " + SQL + " is executed");
     }
+
 
 }
