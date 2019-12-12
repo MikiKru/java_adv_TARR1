@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71debeb0-76f8-4b57-9949-830e4ade49da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/fileIO/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileIO/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taskManager/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taskManager/controller/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taskManager/controller/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taskManager/controller/FileManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,10 +16,26 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/taskManager/controller/ApplicationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="90" column="16" lean-forward="true" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#518#519#0" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/taskManager/controller/FileManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="125">
+              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -69,12 +86,12 @@
         <option value="$PROJECT_DIR$/src/main/java/tests/Rideable.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/Camel.java" />
         <option value="$PROJECT_DIR$/src/main/java/taskManager/controller/TaskManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taskManager/controller/ApplicationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/taskManager/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/fileIO/text.txt" />
         <option value="$PROJECT_DIR$/src/main/java/fileIO/data.csv" />
         <option value="$PROJECT_DIR$/src/main/java/fileIO/FileService.java" />
         <option value="$PROJECT_DIR$/src/main/java/taskManager/controller/FileManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taskManager/controller/ApplicationController.java" />
       </list>
     </option>
   </component>
@@ -183,7 +200,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576176367707" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576176753673" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -291,12 +308,12 @@
       <updated>1575909642238</updated>
       <workItem from="1575909646582" duration="36104000" />
       <workItem from="1576168124441" duration="5101000" />
-      <workItem from="1576173476402" duration="2753000" />
+      <workItem from="1576173476402" duration="3035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43958000" />
+    <option name="totallyTimeSpent" value="44240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -521,20 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taskManager/controller/ApplicationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/taskManager/controller/TaskManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -601,8 +604,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/taskManager/controller/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="125">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taskManager/controller/ApplicationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="90" column="16" lean-forward="true" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

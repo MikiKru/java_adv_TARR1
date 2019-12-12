@@ -6,7 +6,7 @@ import taskManager.model.User;
 import java.time.LocalDate;
 import java.util.List;
 
-public class ApplicationController implements UserManager, TaskManager {
+public class ApplicationController implements UserManager, TaskManager, FileManager {
     @Override
     public void addUser(String name, String lastName) {
         // utworzenie obiektu user
@@ -81,5 +81,15 @@ public class ApplicationController implements UserManager, TaskManager {
             }
         }
         System.out.println("After deadline tasks: " + afterDeadlineCounter);
+    }
+
+    @Override
+    public void saveTasksToFile() {
+        // jak wydobyć wszystkie taski z użytkowników
+        for (User u : UserManager.users) {
+            for (Task s : u.getTasks()){
+                
+            }
+        }
     }
 }
