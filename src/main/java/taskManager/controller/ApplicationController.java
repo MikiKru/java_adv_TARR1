@@ -38,8 +38,17 @@ public class ApplicationController implements UserManager, TaskManager {
         return task;
     }
     @Override
-    public void setTaskStatus(boolean status) {
-
+    public void setTaskStatus(boolean status, int userIndex, int taskIndex) {
+        // 1. znajdź użytkownika w liście po jego ineksie
+        // 2. znajdź zadanie po indeksie zadania w liście zadań użytkownika
+        // 3. zmododyfikuj status wyszukanego zadania
+        User user = UserManager.users.get(userIndex);
+        List<Task> userTasks = user.getTasks();
+        Task task = userTasks.get(taskIndex);
+        task.setStatus(status);
     }
+
+
+
 
 }

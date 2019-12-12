@@ -10,6 +10,7 @@ public class Main {
         ac.addUser("Michał", "Kruczkowski");
         ac.addTask("Nauka programowania", LocalDate.of(2020, 02, 01), ac.getUserByIndex(2));
         ac.addTask("Nauka programowania zaawansowanego", LocalDate.of(2020, 02, 23), ac.getUserByIndex(2));
+        ac.setTaskStatus(true, 2, 0);
         ac.printAllUsers();
     }
 }
