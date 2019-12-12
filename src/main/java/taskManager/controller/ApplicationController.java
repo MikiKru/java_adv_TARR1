@@ -48,7 +48,41 @@ public class ApplicationController implements UserManager, TaskManager {
         task.setStatus(status);
     }
 
-
+    @Override
+    public void countAllTasks(int userIndex) {
+        System.out.println("All tasks: " + UserManager.users.get(userIndex).getTasks().size());
+    }
+    @Override
+    public void countClosedTasks(int userIndex) {
+        int closedCounter = 0;
+        for (Task t : UserManager.users.get(userIndex).getTasks()) {
+            if(t.isStatus()){
+                closedCounter++;
+            }
+        }
+        System.out.println("Closed tasks: " + closedCounter);
+    }
+    @Override
+    public void countOpenTasks(int userIndex) {
+        int openCounter = 0;
+        for (Task t : UserManager.users.get(userIndex).getTasks()) {
+            if(!t.isStatus()){
+                openCounter++;
+            }
+        }
+        System.out.println("Open tasks: " + openCounter);
+    }
+    @Override
+    public void countAfterDeadlineTasks(int userIndex) {
+        int afterDeadlineCounter = 0;
+        for (Task t : UserManager.users.get(userIndex).getTasks()) {
+            if(t.getDeadline().isAfter(LocalDate.now())){
+                afterDeadlineCounter++;
+            }
+        }
+        System.out.println("After deadline tasks: " + afterDeadlineCounter);
+    }
+    }
 
 
 }
