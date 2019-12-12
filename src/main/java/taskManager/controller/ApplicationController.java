@@ -3,8 +3,10 @@ package taskManager.controller;
 import taskManager.model.Task;
 import taskManager.model.User;
 
+import java.io.*;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Scanner;
 
 public class ApplicationController implements UserManager, TaskManager, FileManager {
     @Override
@@ -84,12 +86,28 @@ public class ApplicationController implements UserManager, TaskManager, FileMana
     }
 
     @Override
-    public void saveTasksToFile() {
+    public void saveTasksToFile() throws IOException {
+        FileWriter pw = new FileWriter(new File(FileManager.FILE_PATH), true);
         // jak wydobyć wszystkie taski z użytkowników
         for (User u : UserManager.users) {
-            for (Task s : u.getTasks()){
-                
-            }
-        }
+            for (Task t : u.getTasks()){
+                pw.append(
+                        t.getTaskName()+";"+t.getDeadline()+";"+t.isStatus()+";"+
+                                u.getName()+";"+u.getLastName()+"\n"
+                ); }}
+        pw.close();
     }
+    @Override
+    public void getDataFromFile() throws FileNotFoundException {
+        Scanner s = new Scanner(new File(FileManager.FILE_PATH));
+        while(s.hasNext()){
+            String line [] = s.nextLine().split(";");
+            System.out.println("Task: " + line[0]);
+            System.out.println("Deadline: " + line[1]);
+            System.out.println("Status: " + line[2]);
+            System.out.println("User: " + line[3] + " " + line[4]);
+        }
+        s.close();
+    }
+
 }

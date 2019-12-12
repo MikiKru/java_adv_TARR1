@@ -8,10 +8,12 @@ import java.util.List;
 
 public interface UserManager {
     // statyczna lista agregująca użytkowników
-    public static List<User> users = new LinkedList<>(Arrays.asList(
-            new User("Jan","Kowalski"),
-            new User("Adam","Nowak")
-    ));
+    public static List<User> users = new LinkedList<>(
+//            Arrays.asList(
+//            new User("Jan","Kowalski"),
+//            new User("Adam","Nowak")
+//    )
+    );
     // METODY ABSTRAKCYJNE
     // metoda do dodawania użytkowników
     void addUser(String name, String lastName);
