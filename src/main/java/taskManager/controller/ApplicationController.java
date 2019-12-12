@@ -76,13 +76,10 @@ public class ApplicationController implements UserManager, TaskManager {
     public void countAfterDeadlineTasks(int userIndex) {
         int afterDeadlineCounter = 0;
         for (Task t : UserManager.users.get(userIndex).getTasks()) {
-            if(t.getDeadline().isAfter(LocalDate.now())){
+            if(t.getDeadline().isBefore(LocalDate.now())){
                 afterDeadlineCounter++;
             }
         }
         System.out.println("After deadline tasks: " + afterDeadlineCounter);
     }
-    }
-
-
 }
