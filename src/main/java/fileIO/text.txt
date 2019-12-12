@@ -1,0 +1,9 @@
+Odczyt danych z pliku!!!
+Row1
+Row2
+Row3
+Row4
+Row5
+void hello(){
+    System.out.println("HW");
+}
