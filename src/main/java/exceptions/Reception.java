@@ -7,11 +7,11 @@ public class Reception {
         try {
             if (roomNo == 13) {
                 // ręczne zgłoszenie wyjątku -> po to by go obsłużyć
-                throw new InputMismatchException(); // tworzę obiekt wyjątku
+                throw new ReservationException(); // tworzę obiekt wyjątku
             }
             System.out.println("Przypisano gości do pokoju numer " + roomNo);
-        } catch (InputMismatchException e){
-            System.out.println("W naszym hotelu nie można przypisać gości do pokoju nr 13");
+        } catch (ReservationException e){
+            System.out.println(e.getMessage());
         }
     }
 
