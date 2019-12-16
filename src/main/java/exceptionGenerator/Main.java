@@ -11,7 +11,7 @@ public class Main {
         // Każdy z wyjątków posiada konstruktor zwracający typ danego wyjątku
         // Każdy z wyjątków posiada własną metodę getMessage() i printStackTrace()
         // getMessage() -> zwraca datę i czas wystąpienia wyjątku
-        // printStackTarace() -> zawraca Klasę w którym wystąpiła dany wyjątek
+        // printStackTarace() -> zawraca Klasę w którym wystąpił dany wyjątek
         Random random = new Random();
         int randomInteger = random.nextInt(3); // losuje wartości 0 lub 1 lub 2
         switch (randomInteger){
