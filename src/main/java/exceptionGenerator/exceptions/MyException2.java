@@ -2,9 +2,9 @@ package exceptionGenerator.exceptions;
 
 import java.time.LocalDateTime;
 
-public class MyException1 extends Exception implements MyExeception {
+public class MyException2 extends Exception implements MyExeception {
 
-    public MyException1() {
+    public MyException2() {
         System.out.println("TYP WYJATKU: " + getClass().getName());
     }
 
