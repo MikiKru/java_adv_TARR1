@@ -45,6 +45,8 @@ public class UserInteractions {
 
             } catch (InputMismatchException e) {
                 System.out.println("Podałeś błędną liczbę");
+            } catch (Exception e){
+                System.out.println("Ups! Coś poszło nie tak");
             } finally {
                 scanner.nextLine();
             }
