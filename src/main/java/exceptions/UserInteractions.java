@@ -54,7 +54,15 @@ public class UserInteractions {
     }
 
     public static void main(String[] args) {
-        UserInteractions ui = new UserInteractions();
-        ui.getUserData();
+//        UserInteractions ui = new UserInteractions();
+//        ui.getUserData();
+        int a = 0;
+        boolean result = (a == 1);
+        System.out.println(a == 1);
+        int x = 7;
+        String res = (x == 6) ? "x == 6" : "x != 6";
+        System.out.println(res);
+
+
     }
 }

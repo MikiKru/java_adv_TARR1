@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71debeb0-76f8-4b57-9949-830e4ade49da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/UserInteractions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/UserInteractions.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,14 +36,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/UserInteractions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+            <state relative-caret-position="114">
+              <caret line="56" selection-start-line="56" selection-start-column="2" selection-end-line="57" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exceptionGenerator/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -125,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/main/java/exceptions/ReservationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptions/Reception.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptions/UserInteractions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptionGenerator/Main.java" />
       </list>
     </option>
   </component>
@@ -200,7 +211,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptionGenerator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_advanced" type="b2602c69:ProjectViewProjectNode" />
@@ -215,13 +226,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576519475839" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576522374481" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -235,7 +246,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Reception">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Gamma" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tests.Gamma" />
       <module name="java_advanced" />
@@ -249,12 +260,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="taskManager.Main" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exceptionGenerator.Main" />
       <module name="java_advanced" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="taskManager.*" />
+          <option name="PATTERN" value="exceptionGenerator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -297,11 +308,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Reception" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.UserInteractions" />
+        <item itemvalue="Application.Reception" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Gamma" />
-        <item itemvalue="Application.Main (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -318,18 +329,18 @@
       <workItem from="1575909646582" duration="36104000" />
       <workItem from="1576168124441" duration="5101000" />
       <workItem from="1576173476402" duration="4956000" />
-      <workItem from="1576514756898" duration="4970000" />
+      <workItem from="1576514756898" duration="7398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51131000" />
+    <option name="totallyTimeSpent" value="53559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18255034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18255034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -338,7 +349,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15722379" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1388102" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -692,11 +703,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/UserInteractions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+        <state relative-caret-position="114">
+          <caret line="56" selection-start-line="56" selection-start-column="2" selection-end-line="57" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exceptionGenerator/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
