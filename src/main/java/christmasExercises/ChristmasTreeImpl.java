@@ -21,7 +21,17 @@ public class ChristmasTreeImpl implements ChristmasTree {
                     System.out.print("^");
                 }
                 else if (k <= (2 * i - 1)) {
-                    System.out.print(bubbles[r.nextInt(6)]);
+                    String bubble = bubbles[r.nextInt(6)];
+                    System.out.print(bubble);
+                    if(bubble.equals(bubbles[0])){
+                        bubblesCount[0]++;
+                    } else if(bubble.equals(bubbles[1])){
+                        bubblesCount[1]++;
+                    } else if(bubble.equals(bubbles[2])){
+                        bubblesCount[2]++;
+                    } else {
+                        bubblesCount[3]++;
+                    }
                 }
             }
             System.out.println();
