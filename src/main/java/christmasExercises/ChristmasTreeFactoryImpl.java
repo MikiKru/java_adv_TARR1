@@ -17,7 +17,15 @@ public class ChristmasTreeFactoryImpl implements ChristmasTreeFactory {
     }
     @Override
     public void consumeRandomChristmasTree() {
-
+        // losowo wybierana i usuwana jest choinka z listy
+        // jako wynik wyświetl sprzedaną choinkę
+        if(ChristmasTreeFactory.christmasTrees.size() > 0) {
+            int index = new Random().nextInt(ChristmasTreeFactory.christmasTrees.size()); // losowo wybrany index
+            System.out.println("Sprzedano choinkę");
+            System.out.println(ChristmasTreeFactory.christmasTrees.remove(index));
+        } else {
+            System.out.println("Spóźniłeś się! Wszystkie choinki zostały sprzedane");
+        }
     }
     @Override
     public void getAllChristmasTrees() {    // wszystkie elementy z listy z interfejsu
@@ -30,5 +38,11 @@ public class ChristmasTreeFactoryImpl implements ChristmasTreeFactory {
         ChristmasTreeFactoryImpl ctfi = new ChristmasTreeFactoryImpl();
         ctfi.produceNrandomSizechristmasTrees(5);
         ctfi.getAllChristmasTrees();
+        ctfi.consumeRandomChristmasTree();
+        ctfi.consumeRandomChristmasTree();
+        ctfi.consumeRandomChristmasTree();
+        ctfi.consumeRandomChristmasTree();
+        ctfi.consumeRandomChristmasTree();
+        ctfi.consumeRandomChristmasTree();
     }
 }
