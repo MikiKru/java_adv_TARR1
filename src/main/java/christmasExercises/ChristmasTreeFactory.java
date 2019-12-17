@@ -12,5 +12,5 @@ public interface ChristmasTreeFactory {
     // sprzedaż losowej choinki z list
     void consumeRandomChristmasTree();
     // prezentacja wszystkich choinek
-    void getAllChristmasTrees(); 
+    void getAllChristmasTrees();
 }
