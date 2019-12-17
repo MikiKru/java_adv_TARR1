@@ -4,25 +4,25 @@ import java.util.Random;
 
 public class ChristmasTreeImpl implements ChristmasTree {
 
-
     @Override
-    public void drawChristmasTree(int n) {
+    public String produceChristmasTree(int n) {
         Random r = new Random();
         String bubbles [] = {"@", "O", "o", "*", "*", "*"};
         int bubblesCount [] = {0,0,0,0};
+        String christmasTree = "";
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= (2 * n - 1); j++) {
                 if (j <= (n - i)) {
-                    System.out.print(" ");
+                    christmasTree += " ";
                 }
             }
             for (int k = 1; k <= (2 * n - 1); k++) {
                 if (i==1 && k==1) {
-                    System.out.print("^");
+                    christmasTree += "^";
                 }
                 else if (k <= (2 * i - 1)) {
                     String bubble = bubbles[r.nextInt(6)];
-                    System.out.print(bubble);
+                    christmasTree += bubble;
                     if(bubble.equals(bubbles[0])){
                         bubblesCount[0]++;
                     } else if(bubble.equals(bubbles[1])){
@@ -34,14 +34,14 @@ public class ChristmasTreeImpl implements ChristmasTree {
                     }
                 }
             }
-            System.out.println();
+            christmasTree += "\n";
             if(i == n) {
                 for (int l = 1; l < (2 * i - 1); l++) {
                     if (l <= (2*n - 1)/2) {
-                        System.out.print(" ");
+                        christmasTree += " ";
                     }
                 }
-                System.out.println("H");
+                christmasTree += "H";
             }
         }
         System.out.println("Christmas Tree Stats");
@@ -51,9 +51,13 @@ public class ChristmasTreeImpl implements ChristmasTree {
         System.out.printf("Percent of O: %.2f \n", ((double)bubblesCount[1]/allElements)* 100);
         System.out.printf("Percent of o: %.2f \n", ((double)bubblesCount[2]/allElements)* 100);
         System.out.printf("Percent of *: %.2f \n", ((double)bubblesCount[3]/allElements)* 100);
+
+        return christmasTree;
     }
 
     public static void main(String[] args) {
-        new ChristmasTreeImpl().drawChristmasTree(10);
+        ChristmasTree ct = new ChristmasTreeImpl();
+        String christmasTree = ct.produceChristmasTree(10);
+        System.out.println(christmasTree);
     }
 }
