@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71debeb0-76f8-4b57-9949-830e4ade49da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTreeImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="71debeb0-76f8-4b57-9949-830e4ade49da" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,11 +79,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTreeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+            <state relative-caret-position="540">
+              <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTreeFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,11 +106,6 @@
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/exceptionGenerator/exceptions/MyException2.java">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -170,6 +174,7 @@
         <option value="$PROJECT_DIR$/src/main/java/tests/JavaSETest.java" />
         <option value="$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTreeImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTreeFactory.java" />
       </list>
     </option>
   </component>
@@ -260,7 +265,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576607934834" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576607957652" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -375,18 +380,18 @@
       <workItem from="1575909646582" duration="36104000" />
       <workItem from="1576168124441" duration="5101000" />
       <workItem from="1576173476402" duration="4956000" />
-      <workItem from="1576514756898" duration="17665000" />
+      <workItem from="1576514756898" duration="18360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63826000" />
+    <option name="totallyTimeSpent" value="64521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22483222" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22483222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -395,7 +400,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.05240793" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -836,8 +841,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTreeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+        <state relative-caret-position="540">
+          <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/christmasExercises/ChristmasTreeFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
