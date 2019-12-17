@@ -44,7 +44,13 @@ public class ChristmasTreeImpl implements ChristmasTree {
                 System.out.println("H");
             }
         }
-
+        System.out.println("Christmas Tree Stats");
+        int allElements = bubblesCount[0] + bubblesCount[1] + bubblesCount[2] + bubblesCount[3];
+        System.out.println("No. elements: " + (2 + allElements));
+        System.out.printf("Percent of @: %.2f \n", ((double)bubblesCount[0]/allElements)* 100);
+        System.out.printf("Percent of O: %.2f \n", ((double)bubblesCount[1]/allElements)* 100);
+        System.out.printf("Percent of o: %.2f \n", ((double)bubblesCount[2]/allElements)* 100);
+        System.out.printf("Percent of *: %.2f \n", ((double)bubblesCount[3]/allElements)* 100);
     }
 
     public static void main(String[] args) {
