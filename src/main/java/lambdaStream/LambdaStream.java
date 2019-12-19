@@ -39,25 +39,35 @@ public class LambdaStream {
                     .collect(Collectors.toList());                          // operacja kończąca zapis elementów do listy
     }
     public Integer getMaxFromList(){
-        return null;
+        return numbersList.stream()
+                            .sorted((v1, v2) -> v2.compareTo(v1))   // operacja pośrednia
+                            .limit(1)                               // operacja pośrednia
+                            .collect(Collectors.toList())           // operacja kończąca zwraca listę
+                            .get(0);                                // getter zwracający wartość na indeksie 0
     }
     public Integer getMinFromList(){
-        return null;
+        return numbersList.stream()
+                .sorted((v1, v2) -> v1.compareTo(v2))   // operacja pośrednia
+                .limit(1)                               // operacja pośrednia
+                .collect(Collectors.toList())           // operacja kończąca zwraca listę
+                .get(0);                                // getter zwracający wartość na indeksie 0
     }
     public Integer getAvgFromList(){
         return null;
     }
     public static void main(String[] args) {
         LambdaStream ls = new LambdaStream();
-        ls.getAllValuesArray();
-        System.out.println();
-        ls.getAllValuesList();
-        System.out.println();
-        List<Integer> filteredElements = ls.getPositiveValuesFromArray();
-        System.out.println(filteredElements);
-        System.out.println(ls.numbersList);
-        System.out.println(ls.getElementsSorted(true));
-        System.out.println(ls.getElementsSorted(false));
+        System.out.println(ls.getMaxFromList());
+        System.out.println(ls.getMinFromList());
+        //        ls.getAllValuesArray();
+//        System.out.println();
+//        ls.getAllValuesList();
+//        System.out.println();
+//        List<Integer> filteredElements = ls.getPositiveValuesFromArray();
+//        System.out.println(filteredElements);
+//        System.out.println(ls.numbersList);
+//        System.out.println(ls.getElementsSorted(true));
+//        System.out.println(ls.getElementsSorted(false));
     }
 
 }

@@ -29,16 +29,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/lambdaStream/LambdaStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+            <state relative-caret-position="559">
+              <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#673#674#0" expanded="true" />
                 <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#1816#1817#0" expanded="true" />
-                <element signature="e#1842#1843#0" expanded="true" />
-                <element signature="e#1884#1885#0" expanded="true" />
-                <element signature="e#1911#1912#0" expanded="true" />
                 <element signature="e#1948#1949#0" expanded="true" />
                 <element signature="e#1975#1976#0" expanded="true" />
               </folding>
@@ -139,7 +135,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576775869167" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576776537745" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -256,12 +252,12 @@
       <workItem from="1576173476402" duration="4956000" />
       <workItem from="1576514756898" duration="21002000" />
       <workItem from="1576686234316" duration="10072000" />
-      <workItem from="1576696659511" duration="2918000" />
+      <workItem from="1576696659511" duration="3248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80153000" />
+    <option name="totallyTimeSpent" value="80483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -757,16 +753,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lambdaStream/LambdaStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="559">
+          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#673#674#0" expanded="true" />
             <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#1816#1817#0" expanded="true" />
-            <element signature="e#1842#1843#0" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
-            <element signature="e#1911#1912#0" expanded="true" />
             <element signature="e#1948#1949#0" expanded="true" />
             <element signature="e#1975#1976#0" expanded="true" />
           </folding>
