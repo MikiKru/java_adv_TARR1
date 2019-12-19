@@ -1,9 +1,6 @@
 package lambdaStream;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Arrays;
+import java.util.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -52,13 +49,46 @@ public class LambdaStream {
                 .collect(Collectors.toList())           // operacja kończąca zwraca listę
                 .get(0);                                // getter zwracający wartość na indeksie 0
     }
-    public Integer getAvgFromList(){
+    public Double getAvgFromList(){
+        return numbersList.stream()
+                .mapToDouble(Integer::doubleValue)   // przekształcenie wartości na double
+                .average()                          // oblicza średnią z wszystkich wartości -> Optional<Double>
+                .getAsDouble();                     // zwraca wartość typu double  -> pobranie getterm wartości z optionama
+    }
+    public Integer findValue(Integer value){
+        for (Integer i : numbersList) {
+            if(i.equals(value)){
+                return value;
+            }
+        }
         return null;
     }
+    public Optional<Integer> findValueWithOptional(Integer value){
+        return numbersList.stream()                 // strumień
+                .filter(v -> v.equals(value))      // zwraca optional zwraca kontener z wartością lub z nullem
+                .findAny();
+    }
+
     public static void main(String[] args) {
         LambdaStream ls = new LambdaStream();
-        System.out.println(ls.getMaxFromList());
-        System.out.println(ls.getMinFromList());
+        int findValue = -5;
+//        if(ls.findValueWithOptional(findValue).isPresent()){       // jeżeli Optional przyjmuje wartośc niepustą -> true
+//            System.out.println(ls.findValueWithOptional(findValue).get());
+//        } else {                                            // optional zawiera null
+//            System.out.println("Brak wartości "+findValue+" w naszej liście");
+//        }
+        ls.findValueWithOptional(findValue)
+                .ifPresent(value -> System.out.println("Znaleziono " + value));
+        System.out.println(
+                ls.findValueWithOptional(findValue)
+                        .map(String::valueOf)
+                        .orElse("Brak wartości")
+        );
+
+//        System.out.println(ls.findValue(-5) + 2);
+//        System.out.println(ls.getMaxFromList());
+//        System.out.println(ls.getMinFromList());
+//        System.out.println(ls.getAvgFromList());
         //        ls.getAllValuesArray();
 //        System.out.println();
 //        ls.getAllValuesList();
