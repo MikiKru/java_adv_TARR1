@@ -16,7 +16,7 @@ public class LambdaStream {
         });
     }
     public void getAllValuesList(){
-        names.forEach(n -> System.out.printf("%s ",n.toUpperCase()));
+        names.forEach(n -> System.out.printf("%s ",n));
     }
 
     public static void main(String[] args) {
