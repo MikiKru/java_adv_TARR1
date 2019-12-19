@@ -24,8 +24,28 @@ public class LambdaStream {
     }
     public List<Integer> getPositiveValuesFromArray(){
         return numbersList.stream()                     // zamiana tablicy na strumień
-                    .filter(value -> value > 0)         // filtrowanie wartości większych od zera
-                    .collect(Collectors.toList());
+                    .filter(value -> value > 0)         // operacja pośrednia filtrowanie wartości większych od zera
+                    .collect(Collectors.toList());      // operacja kończąca zapis elementów do listy
+    }
+    public List<Integer> getElementsSorted(boolean asc){
+        return numbersList.stream()                                         // zamiana listy na strumień
+                    .sorted((value1, value2) -> {
+                            if(asc){
+                                return value1.compareTo(value2);  // operacja pośrednia sortowanie asc
+                            } else {
+                                return value2.compareTo(value1);   // operacja pośrednia sortowanie desc
+                            }
+                    })
+                    .collect(Collectors.toList());                          // operacja kończąca zapis elementów do listy
+    }
+    public Integer getMaxFromList(){
+        return null;
+    }
+    public Integer getMinFromList(){
+        return null;
+    }
+    public Integer getAvgFromList(){
+        return null;
     }
     public static void main(String[] args) {
         LambdaStream ls = new LambdaStream();
@@ -36,6 +56,8 @@ public class LambdaStream {
         List<Integer> filteredElements = ls.getPositiveValuesFromArray();
         System.out.println(filteredElements);
         System.out.println(ls.numbersList);
+        System.out.println(ls.getElementsSorted(true));
+        System.out.println(ls.getElementsSorted(false));
     }
 
 }
