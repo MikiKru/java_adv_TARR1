@@ -68,22 +68,35 @@ public class LambdaStream {
                 .filter(v -> v.equals(value))      // zwraca optional zwraca kontener z wartością lub z nullem
                 .findAny();
     }
+    public Optional<Integer> getMinWithOptional(){
+//        return numbersList.stream().min((o1, o2) -> o1.compareTo(o2));
+        return numbersList.stream().min(Integer::compareTo);
+    }
+    public List<Integer> getPositiveAndEvenSortedValues(){
+        return numbersList.stream()
+                .filter(i -> (i % 2 == 0) && (i > 0))               // operacja pośrednia
+                .sorted(Comparator.comparing(Integer::intValue))    // operacja pośrednia
+                .collect(Collectors.toList());                      // operacja kończąca
+    }
 
     public static void main(String[] args) {
         LambdaStream ls = new LambdaStream();
-        int findValue = -5;
-//        if(ls.findValueWithOptional(findValue).isPresent()){       // jeżeli Optional przyjmuje wartośc niepustą -> true
-//            System.out.println(ls.findValueWithOptional(findValue).get());
-//        } else {                                            // optional zawiera null
-//            System.out.println("Brak wartości "+findValue+" w naszej liście");
-//        }
-        ls.findValueWithOptional(findValue)
-                .ifPresent(value -> System.out.println("Znaleziono " + value));
-        System.out.println(
-                ls.findValueWithOptional(findValue)
-                        .map(String::valueOf)
-                        .orElse("Brak wartości")
-        );
+        System.out.println(ls.getPositiveAndEvenSortedValues());
+//        ls.getMinWithOptional().ifPresent(i -> System.out.println("Wartość minimalna to: " + i));
+//        System.out.println(ls.getMinWithOptional().map(i -> String.valueOf(i)).orElse("Lista jest pusta"));
+//        int findValue = -5;
+////        if(ls.findValueWithOptional(findValue).isPresent()){       // jeżeli Optional przyjmuje wartośc niepustą -> true
+////            System.out.println(ls.findValueWithOptional(findValue).get());
+////        } else {                                            // optional zawiera null
+////            System.out.println("Brak wartości "+findValue+" w naszej liście");
+////        }
+//        ls.findValueWithOptional(findValue)
+//                .ifPresent(value -> System.out.println("Znaleziono " + value));
+//        System.out.println(
+//                ls.findValueWithOptional(findValue)
+//                        .map(String::valueOf)
+//                        .orElse("Brak wartości " + findValue)
+//        );
 
 //        System.out.println(ls.findValue(-5) + 2);
 //        System.out.println(ls.getMaxFromList());
