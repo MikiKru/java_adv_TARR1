@@ -88,7 +88,7 @@ public class LambdaStream {
                 .collect(Collectors.toList());
     }
     public void printSqrtCollection(Collection c){
-        c.stream().forEach(o -> System.out.printf("%.2f ",o));
+        c.forEach(o -> System.out.printf("%.2f ",o));
     }
 
     public static void main(String[] args) {
