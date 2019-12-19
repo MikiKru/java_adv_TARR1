@@ -4,6 +4,8 @@ import java.util.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+import static java.lang.Math.sqrt;
+
 public class LambdaStream {
     int numbers [] = {5,-4,6,-3,2,13,2, -1};
     List<Integer> numbersList  = new ArrayList<>(Arrays.asList(5,-4,6,-3,2,13,2, -1));
@@ -78,10 +80,21 @@ public class LambdaStream {
                 .sorted(Comparator.comparing(Integer::intValue))    // operacja pośrednia
                 .collect(Collectors.toList());                      // operacja kończąca
     }
+    // zwróć wynik pierwiatskowania kwadratowego dla każdego elementu listy numbesList
+    public List<Double> getSqrtForAllValues(){
+        return numbersList.stream()
+                .filter(i -> i >= 0)
+                .map(Math::sqrt)
+                .collect(Collectors.toList());
+    }
+    public void printSqrtCollection(Collection c){
+        c.stream().forEach(o -> System.out.printf("%.2f ",o));
+    }
 
     public static void main(String[] args) {
         LambdaStream ls = new LambdaStream();
-        System.out.println(ls.getPositiveAndEvenSortedValues());
+        ls.printSqrtCollection(ls.getSqrtForAllValues());
+//        System.out.println(ls.getPositiveAndEvenSortedValues());
 //        ls.getMinWithOptional().ifPresent(i -> System.out.println("Wartość minimalna to: " + i));
 //        System.out.println(ls.getMinWithOptional().map(i -> String.valueOf(i)).orElse("Lista jest pusta"));
 //        int findValue = -5;
