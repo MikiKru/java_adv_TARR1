@@ -32,6 +32,7 @@ public class QueueOperation {
         q.showMessages();
         System.out.println("==================");
         System.out.println(q.removeElement());
+        q.addMessage("Nowy");
         System.out.println(q.removeElement());
         System.out.println(q.removeElement());
         System.out.println(q.removeElement());
