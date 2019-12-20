@@ -1,5 +1,29 @@
 package lambdaStreamOptional.controller;
 
+import lambdaStreamOptional.model.Permission;
+import lambdaStreamOptional.model.User;
+import lambdaStreamOptional.util.InMemoryDB;
+
+import java.util.Optional;
+import java.util.Set;
+
 public class UserController {
-    
+    // wypisz wszystkich użytkowników
+    public void getAllUsers(){
+        InMemoryDB.users.forEach(System.out::println);
+    }
+    // dodaj uprawnienia administratora dla użytkownika o danym id
+    public boolean addPermissionToUser(int user_id, Permission premission){
+        Optional<User> userOpt = InMemoryDB.users.stream()
+                                .filter(u -> user_id == u.getUser_id())
+                                .findAny();
+        if(userOpt.isPresent()){
+          User user = userOpt.get();    // pobieram wartość
+          Set<Permission> permissions = user.getPermissions();  // zbiór uprawnień
+          permissions.add(premission);                          // dodanie uprawnienia
+          user.setPermissions(permissions);                     // zapisanie zmian
+          return true;
+        }
+        return false;
+    }
 }
