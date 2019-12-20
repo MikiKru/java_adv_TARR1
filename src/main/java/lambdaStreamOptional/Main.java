@@ -10,6 +10,8 @@ public class Main {
         uc.addPermissionToUser(2, Permission.ROLE_ADMIN);
         uc.addPermissionToUser(4, Permission.ROLE_ADMIN);
         uc.addPermissionToUser(6, Permission.ROLE_ADMIN);
-        uc.getAllUsers();
+//        uc.getAllUsers();
+//        uc.getUsersByPermission(Permission.ROLE_ADMIN);
+        uc.getUsersSortedByPermission();
     }
 }

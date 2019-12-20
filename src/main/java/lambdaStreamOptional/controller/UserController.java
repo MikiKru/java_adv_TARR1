@@ -4,6 +4,7 @@ import lambdaStreamOptional.model.Permission;
 import lambdaStreamOptional.model.User;
 import lambdaStreamOptional.util.InMemoryDB;
 
+import java.util.Comparator;
 import java.util.Optional;
 import java.util.Set;
 
@@ -11,6 +12,18 @@ public class UserController {
     // wypisz wszystkich użytkowników
     public void getAllUsers(){
         InMemoryDB.users.forEach(System.out::println);
+    }
+    // metoda wypisująca wszystkich użytkowników posortowanych po uprawnieniach od Admina do Usera
+    public void getUsersSortedByPermission(){
+        InMemoryDB.users.stream()
+                        .sorted(Comparator.comparing(u -> !u.getPermissions().contains(Permission.ROLE_ADMIN)))
+                        .forEach(System.out::println);
+    }
+    // metoda wypisująca użytkowników posiadających zadane uprawnienia
+    public void getUsersByPermission(Permission permission){
+        InMemoryDB.users.stream()
+                        .filter(u -> u.getPermissions().contains(permission))
+                        .forEach(System.out::println);
     }
     // dodaj uprawnienia administratora dla użytkownika o danym id
     public boolean addPermissionToUser(int user_id, Permission premission){
@@ -26,4 +39,10 @@ public class UserController {
         }
         return false;
     }
+    // zmiana statusu na przeciwny użytkownika o podanym user_id
+    
+
+
+
+
 }
