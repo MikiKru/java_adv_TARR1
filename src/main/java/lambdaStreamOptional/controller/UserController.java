@@ -46,7 +46,26 @@ public class UserController {
                 .findAny()                                  // zawraca Optional
                 .ifPresent(u -> u.setStatus(!u.isStatus()));
     }
-
+    // zmień hasło użytkownika o danym id
+    public boolean changePassword(int user_id, String password, String replayPassword){
+        final boolean[] isChanged = {false};
+        InMemoryDB.users.stream()
+                .filter(u -> u.getUser_id() == user_id)
+                .findAny()
+                .ifPresent(u -> {
+                    if (password.equals(replayPassword)) {
+                        u.setPassword(password);
+                        isChanged[0] = true;
+                    }
+                });
+        return isChanged[0];
+    }
+    // wypisz wszystkich aktywnych administratorów
+    public void getAllActiveAdmins(){
+        InMemoryDB.users.stream()
+                .filter(u -> u.getPermissions().contains(Permission.ROLE_ADMIN) && u.isStatus())
+                .forEach(System.out::println);
+    }
 
 
 

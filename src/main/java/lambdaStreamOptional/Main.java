@@ -16,8 +16,11 @@ public class Main {
         uc.changeStatusByUserId(4);
         uc.changeStatusByUserId(5);
         uc.changeStatusByUserId(7);
-        uc.getAllUsers();
+        System.out.println("zmiana: " + uc.changePassword(1, "xxx", "xxx"));
+        System.out.println("zmiana: " + uc.changePassword(1, "xxy", "xxx"));
+//        uc.getAllUsers();
         //        uc.getUsersByPermission(Permission.ROLE_ADMIN);
         //        uc.getUsersSortedByPermission();
+        uc.getAllActiveAdmins();
     }
 }
