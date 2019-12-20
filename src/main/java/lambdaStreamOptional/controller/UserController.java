@@ -73,6 +73,7 @@ public class UserController {
                 .findAny();
         if(userOpt.isPresent()){
             InMemoryDB.users.remove(userOpt.get());
+            getAllUsers();
             return true;
         }
         return false;
