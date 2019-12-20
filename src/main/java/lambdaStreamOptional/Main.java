@@ -18,9 +18,11 @@ public class Main {
         uc.changeStatusByUserId(7);
         System.out.println("zmiana: " + uc.changePassword(1, "xxx", "xxx"));
         System.out.println("zmiana: " + uc.changePassword(1, "xxy", "xxx"));
-//        uc.getAllUsers();
+        uc.deleteUserById(1);
+        uc.deleteUserById(11);
+        uc.getAllUsers();
         //        uc.getUsersByPermission(Permission.ROLE_ADMIN);
         //        uc.getUsersSortedByPermission();
-        uc.getAllActiveAdmins();
+//        uc.getAllActiveAdmins();
     }
 }

@@ -66,7 +66,17 @@ public class UserController {
                 .filter(u -> u.getPermissions().contains(Permission.ROLE_ADMIN) && u.isStatus())
                 .forEach(System.out::println);
     }
-
+    // usuń użytkownika po id
+    public boolean deleteUserById(int user_id){
+        Optional<User> userOpt = InMemoryDB.users.stream()
+                .filter(u -> u.getUser_id() == user_id)
+                .findAny();
+        if(userOpt.isPresent()){
+            InMemoryDB.users.remove(userOpt.get());
+            return true;
+        }
+        return false;
+    }
 
 
 
