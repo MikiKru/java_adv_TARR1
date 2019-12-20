@@ -40,7 +40,15 @@ public class UserController {
         return false;
     }
     // zmiana statusu na przeciwny użytkownika o podanym user_id
-    
+    public void changeStatusByUserId(int user_id){
+        InMemoryDB.users.stream()
+                .filter(u -> u.getUser_id() == user_id)
+                .findAny()                                  // zawraca Optional
+                .ifPresent(u -> u.setStatus(!u.isStatus()));
+    }
+
+
+
 
 
 
