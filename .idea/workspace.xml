@@ -43,16 +43,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/queues/QueueOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+            <state relative-caret-position="250">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#275#276#0" expanded="true" />
                 <element signature="e#321#322#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -242,7 +240,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576868131182" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576868361351" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -360,12 +358,12 @@
       <workItem from="1576514756898" duration="21002000" />
       <workItem from="1576686234316" duration="10072000" />
       <workItem from="1576696659511" duration="10704000" />
-      <workItem from="1576859517597" duration="8588000" />
+      <workItem from="1576859517597" duration="8838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96527000" />
+    <option name="totallyTimeSpent" value="96777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -855,16 +853,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/queues/QueueOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        <state relative-caret-position="250">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#275#276#0" expanded="true" />
             <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
           </folding>
         </state>
       </provider>

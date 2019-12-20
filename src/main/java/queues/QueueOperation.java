@@ -2,6 +2,7 @@ package queues;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.NoSuchElementException;
 import java.util.Queue;
 
 public class QueueOperation {
@@ -15,7 +16,11 @@ public class QueueOperation {
         messages.forEach(System.out::println);
     }
     public String removeElement(){
-        return messages.remove();          // usuwa element z początku kolejki
+        try {
+            return messages.remove();          // usuwa element z początku kolejki
+        } catch (NoSuchElementException e){
+            return "kolejka jest już pusta!";
+        }
     }
 
     public static void main(String[] args) {
@@ -26,6 +31,11 @@ public class QueueOperation {
         q.addMessage("M4");
         q.showMessages();
         System.out.println("==================");
+        System.out.println(q.removeElement());
+        System.out.println(q.removeElement());
+        System.out.println(q.removeElement());
+        System.out.println(q.removeElement());
+        System.out.println(q.removeElement());
         System.out.println(q.removeElement());
     }
 }
